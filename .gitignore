@@ -1,0 +1,8 @@
+node_modules
+test
+weather-station
+.DS_Store
+weather-station.zip
+.eslintrc.js
+package-lock.json
+package.json

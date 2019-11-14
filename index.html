@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Station météo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Big+Shoulders+Text|Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>Bienvenue dans la station météo de la promo</h1>
+    <nav>
+        <ul class="menu">
+            <li id="last-measure-menu">Dernière mesure</li>
+            <li id="top-measures-menu">Top mesures</li>
+            <li id="table-measures-menu">Tableaux des mesures</li>
+            <li id="graph-measures-menu">Graphiques des mesures</li>
+        </ul>
+    </nav>
+    <section id="date-picker">
+        <form id="date-picker-form">
+            <label for="frmStartDate">Date de début</label>
+            <input id="frmStartDate" name="startDate" type="date" required="true">
+            <label for="frmEndDate">Date de fin</label>
+            <input id="frmEndDate" name="endDate" type="date" required="true">
+            <button type="submit">Rafraîchir</button>
+        </form>
+    </section>
+    <section id="weather-content"></section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="./js/date-handling.js"></script>
+<script src="./js/api-handling.js"></script>
+<script src="./js/dom-handling.js"></script>
+<script src="./js/chart-handling.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
